@@ -1,0 +1,174 @@
+@import "variables";
+
+header {
+  text-align: center;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1440px;
+  height: 540px;
+  background: url('../img/photo.svg') center center no-repeat;
+  background-color: rgb(26, 25, 21);
+  background-size: 1440px 540px;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.login, .signup {
+  text-align: center;
+  line-height: 36px;
+  font-family: $mb;
+  font-size: 1.4rem;
+  font-weight: 700;
+  display: inline-block;
+  color: $white;
+  width: 90px;
+  height: 36px;
+  border: 2px solid transparent;
+  border-radius: 18px;
+}
+
+.login {
+  width: 90px;
+  margin-top: 20px;
+  //margin-left: 20%;
+}
+
+.login:hover, .signup:hover {
+  border: 2px solid white;
+  border-radius: 18px;
+  transition: .5s all ease;
+}
+
+.name {
+  &__header {
+    text-align: center;
+    margin-top: 117px;
+    letter-spacing: 0.05em;
+    height: 20px;
+    color: $white;
+    font-family: $mb;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &-text {
+    text-align: center;
+    line-height: 20px;
+    width: 67.85%;
+    margin: 0 auto;
+    height: 36px;
+    color: $white;
+    font-family: $rl;
+    font-size: 1.8rem;
+    margin-top: 22px;
+    font-weight: 300;
+  }
+}
+
+.ref-find {
+  text-align: center;
+  line-height: 40px;
+  color: $white;
+  font-family: $mb;
+  font-size: 1.4rem;
+  font-weight: 700;
+  display: block;
+  margin: 0 auto;
+  width: 280px;
+  height: 40px;
+  background-color: rgb(255, 78, 80);
+  border-radius: 20px;
+  margin-top: 23px;
+  &:hover {
+    transition: .5s all ease;
+    background-color: rgba(255, 78, 80, .5);
+  }
+}
+
+.slogan {
+  text-align: center;
+  margin: 0 auto;
+  height: 59px;
+  line-height: 36px;
+  color: $white;
+  font-family: $mb;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  header {
+    height: 700px;
+    background-size: 1440px 700px;
+  }
+  .name {
+    &__header {
+      float: left;
+      margin-top: 48px;
+      margin-left: 6.3%;
+    }
+    &-text {
+      margin-top: 93px;
+      letter-spacing: .02rem;
+      font-size: 2.4rem;
+    }
+  }
+  .author {
+    float: right;
+    margin-top: 17px;
+    margin-right: 6.5%;
+  }
+  .login {
+    width: 77px;
+  }
+  .slogan {
+    clear: both;
+    margin-top: 216px;
+    width: 490px;
+    font-size: 5.2rem;
+    line-height: 63px;
+  }
+  .ref-find {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  header {
+    height: 700px;
+    background-size: 1440px 700px;
+  }
+  .name {
+    &__header {
+      float: left;
+      margin-top: 48px;
+      margin-left: 250px;
+    }
+    &-text {
+      margin-top: 93px;
+      letter-spacing: .02rem;
+      font-size: 2.4rem;
+    }
+  }
+  .author {
+    float: right;
+    margin-top: 17px;
+    margin-right: 250px;
+  }
+  .login {
+    width: 77px;
+  }
+  .slogan {
+    clear: both;
+    margin-top: 216px;
+    width: 490px;
+    font-size: 5.2rem;
+    line-height: 63px;
+  }
+  .ref-find {
+    width: 226px;
+  }
+
+}

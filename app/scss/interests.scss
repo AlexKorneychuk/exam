@@ -1,0 +1,178 @@
+@import "variables";
+
+.grid {
+  width: 100%;
+  height: 1000px;
+}
+
+.grid-item {
+  margin: 5px 0;
+  position: relative;
+  width: 100%;
+  z-index: -2
+}
+
+.grid-item img {
+  width: 100%;
+  height: 220px;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.grid-item figcaption {
+  font: 2.2rem $mb;
+  color: $white;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ideassection {
+  text-align: center;
+  display: block;
+}
+
+.ideassection h3 {
+  margin-top: 33px;
+  font: 2.2rem $mb;
+  color: $darkgrey;
+  font-weight: bold;
+}
+
+.ideassection h4 {
+  margin-left: 13px;
+  margin-top: 10px;
+  font: 2.2rem $mb;
+}
+
+.form-search {
+  padding-top: 9px;
+  padding-left: 12px;
+}
+
+.form-search-header {
+  font: 1.8rem $rl;
+  color: $darkgrey;
+}
+
+.form-search-input {
+  width: 280px;
+  height: 40px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 1px 0 #eee;
+  margin-top: 16px;
+  padding: 9px 15px;
+  font: 1.4rem $rl;
+  color: $lightgray;
+}
+
+.form-search-btn {
+  width: 280px;
+  padding: 11px 15px;
+  border-radius: 35px;
+  border: 1px solid $red;
+  background-color: $red;
+  margin-top: 9px;
+  font: 1.4rem $mb;
+  cursor: pointer;
+  color: $white;
+}
+
+.form-search-btn:hover {
+  background: $white;
+  color: $red;
+}
+
+.footer {
+  padding: 16px 10px 17px;
+  border-top: 4px solid $red;
+  margin-top: 41px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .ideassection h3 {
+    margin-top: 96px;
+  }
+
+  .grid {
+    max-width: 98%;
+    margin: 18px auto;
+    display: block;
+  }
+  .grid-item {
+
+    max-width: calc(33.33% - 1px);
+  }
+  .grid-item img {
+    height: auto;
+    width: 100%;
+  }
+
+  .warning {
+    margin-top: -20px;
+    right: 30%;
+    left: 30%;
+  }
+  .ideassection h4 {
+    margin-left: 0;
+  }
+  .form-search {
+    padding-top: 29px;
+    padding-left: 0;
+  }
+  .form-search-input {
+    width: 240px;
+    margin-top: 37px;
+  }
+  .form-search-btn {
+    margin-left: 6px;
+    width: 160px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+
+  .ideassection h3 {
+    margin-top: 96px;
+  }
+
+  .grid {
+    max-width: 960px;
+    margin: 18px auto;
+    display: block;
+  }
+  .grid-item {
+    max-width: calc(33.33% - 1px);
+  }
+  .grid-item img {
+    height: auto;
+    width: 100%;
+  }
+
+  .warning {
+    margin-top: -20px;
+    right: 30%;
+    left: 30%;
+  }
+  .ideassection h4 {
+    margin-left: 0;
+    margin-top: 82px;
+  }
+  .form-search {
+    padding-top: 29px;
+    padding-left: 0;
+  }
+  .form-search-input {
+    width: 240px;
+    margin-top: 37px;
+  }
+  .form-search-btn {
+    margin-left: 6px;
+    width: 160px;
+  }
+}
